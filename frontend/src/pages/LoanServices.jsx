@@ -120,20 +120,20 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-800/70 to-blue-600/60 z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 to-slate-900/60 z-0"></div>
         <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
               Comprehensive Loan Solutions
             </h1>
-            <p className="text-xl sm:text-2xl text-blue-100 max-w-3xl mx-auto mb-8 drop-shadow-md">
+            <p className="text-xl sm:text-2xl text-slate-200 max-w-3xl mx-auto mb-8 drop-shadow-md">
               Tailored financial services partnered with leading banks to make
               your aspirations a reality
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={onApplyClick}
-                className="bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-white text-slate-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-slate-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 Get Consultation
               </button>
@@ -143,13 +143,13 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
       </section>
 
       {/* Services Detailed Section */}
-      <section className="py-12 sm:py-16 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-12 sm:py-16 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
               Comprehensive Loan Solutions
             </h2>
-            <p className="text-base text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base text-slate-600 max-w-2xl mx-auto">
               Detailed analysis of our financial services designed to meet your
               unique requirements. Each solution is crafted with transparency,
               expertise, and your financial success in mind.
@@ -161,7 +161,7 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
               <div key={index} className="relative">
                 {/* Connecting Line */}
                 {index < loanServices.length - 1 && (
-                  <div className="absolute left-1/2 -bottom-8 w-0.5 h-8 bg-gradient-to-b from-blue-400 to-blue-200 transform -translate-x-1/2 z-0"></div>
+                  <div className="absolute left-1/2 -bottom-8 w-0.5 h-8 bg-gradient-to-b from-slate-400 to-slate-200 transform -translate-x-1/2 z-0"></div>
                 )}
 
                 {/* Service Card */}
@@ -181,7 +181,7 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
                           alt={service.title}
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-400/30 to-blue-600/30"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/40 to-slate-900/20"></div>
 
                         {/* Title Overlay */}
                         <div className="absolute inset-0 p-6 flex flex-col justify-end">
@@ -207,8 +207,8 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
                     >
                       {/* Overview */}
                       <div className="mb-5">
-                        <h4 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
-                          <FaChartLine className="text-blue-600 mr-2 text-lg" />
+                        <h4 className="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                          <FaChartLine className="text-amber-500 mr-2 text-lg" />
                           Overview
                         </h4>
                         <p className="text-gray-700 leading-relaxed text-sm">
@@ -218,8 +218,8 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
 
                       {/* Key Benefits */}
                       <div className="mb-5">
-                        <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center">
-                          <FaShieldAlt className="text-blue-600 mr-2 text-base" />
+                        <h4 className="text-lg font-bold text-slate-900 mb-3 flex items-center">
+                          <FaShieldAlt className="text-amber-500 mr-2 text-base" />
                           Key Benefits
                         </h4>
                         <div className="space-y-2">
@@ -228,8 +228,8 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
                               key={idx}
                               className="flex items-start space-x-2"
                             >
-                              <FaCheckCircle className="text-blue-600 mt-0.5 flex-shrink-0 text-sm" />
-                              <span className="text-gray-700 leading-relaxed text-sm">
+                              <FaCheckCircle className="text-emerald-500 mt-0.5 flex-shrink-0 text-sm" />
+                              <span className="text-slate-700 leading-relaxed text-sm">
                                 {benefit}
                               </span>
                             </div>
@@ -241,7 +241,7 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
                       <div className="pt-4 border-t border-gray-200">
                         <button
                           onClick={onApplyClick}
-                          className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold text-base hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                          className="w-full sm:w-auto bg-slate-900 text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-slate-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                         >
                           Apply Now
                         </button>
@@ -272,45 +272,45 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl font-bold">1</span>
+              <div className="bg-slate-900 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-slate-900/20">
+                <span className="text-3xl font-bold text-white">1</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2 text-slate-900">
                 Partnered with All Major Banks
               </h3>
-              <p className="text-black-400">
+              <p className="text-slate-500">
                 Access to 20+ leading financial institutions
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl font-bold">2</span>
+              <div className="bg-slate-900 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-slate-900/20">
+                <span className="text-3xl font-bold text-white">2</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Quick Approval</h3>
-              <p className="text-black-400">
+              <h3 className="text-xl font-semibold mb-2 text-slate-900">Quick Approval</h3>
+              <p className="text-slate-500">
                 Get loan approval in as fast as 48 hours
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl font-bold">3</span>
+              <div className="bg-slate-900 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-slate-900/20">
+                <span className="text-3xl font-bold text-white">3</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2 text-slate-900">
                 Minimal Documentation
               </h3>
-              <p className="text-black-400">
+              <p className="text-slate-500">
                 Simple process with reduced paperwork
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl font-bold">4</span>
+              <div className="bg-slate-900 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-slate-900/20">
+                <span className="text-3xl font-bold text-white">4</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Expert Guidance</h3>
-              <p className="text-black-400">
+              <h3 className="text-xl font-semibold mb-2 text-slate-900">Expert Guidance</h3>
+              <p className="text-slate-500">
                 Dedicated support throughout the process
               </p>
             </div>
@@ -319,18 +319,18 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-blue-50 to-blue-100">
+      <section className="py-16 sm:py-20 bg-slate-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-slate-300 mb-8">
             Let our experts help you find the perfect loan solution tailored to
             your needs
           </p>
           <button
             onClick={onApplyClick}
-            className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-10 py-4 rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-xl"
+            className="bg-white text-slate-900 px-10 py-4 rounded-xl font-semibold text-lg hover:bg-slate-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
             Schedule Consultation
           </button>

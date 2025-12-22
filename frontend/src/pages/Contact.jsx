@@ -19,8 +19,8 @@ const Contact = ({ onApplyClick, navigateTo }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Contact Us</h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">Contact Us</h1>
+          <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
             Ready to discuss your loan requirements? Get in touch with our expert team.
           </p>
         </div>
@@ -28,52 +28,52 @@ const Contact = ({ onApplyClick, navigateTo }) => {
         {/* Contact Information Cards - Clean & Simple */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 lg:mb-16">
           {/* Phone Card */}
-          <div className="bg-white border-2 border-blue-100 p-8 rounded-xl hover:border-blue-300 hover:shadow-md transition-all duration-300">
+          <div className="bg-white border-2 border-slate-100 p-8 rounded-xl hover:border-amber-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
             <div className="text-center">
-              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FaPhoneAlt className="text-2xl text-blue-600" />
+              <div className="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-slate-200">
+                <FaPhoneAlt className="text-2xl text-slate-900" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Call Us</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">Call Us</h3>
               <a
                 href="tel:9844208555"
                 className="text-xl font-semibold text-blue-600 hover:text-blue-700 transition-colors block mb-2"
               >
                 +91 9844208555
               </a>
-              <p className="text-sm text-gray-500">Mon-Sat: 9 AM - 6 PM</p>
+              <p className="text-sm text-slate-500">Mon-Sat: 9 AM - 6 PM</p>
             </div>
           </div>
 
           {/* Email Card */}
-          <div className="bg-white border-2 border-blue-100 p-8 rounded-xl hover:border-blue-300 hover:shadow-md transition-all duration-300">
+          <div className="bg-white border-2 border-slate-100 p-8 rounded-xl hover:border-amber-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
             <div className="text-center">
-              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FaEnvelope className="text-2xl text-blue-600" />
+              <div className="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-slate-200">
+                <FaEnvelope className="text-2xl text-slate-900" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Email Us</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">Email Us</h3>
               <a
                 href="mailto:info@finntechbs.com"
                 className="text-lg font-semibold text-blue-600 hover:text-blue-700 transition-colors block mb-2 break-all"
               >
                 info@finntechbs.com
               </a>
-              <p className="text-sm text-gray-500">24/7 Email Support</p>
+              <p className="text-sm text-slate-500">24/7 Email Support</p>
             </div>
           </div>
 
           {/* Address Card */}
-          <div className="bg-white border-2 border-blue-100 p-8 rounded-xl hover:border-blue-300 hover:shadow-md transition-all duration-300 md:col-span-3 lg:col-span-1">
+          <div className="bg-white border-2 border-slate-100 p-8 rounded-xl hover:border-amber-300 hover:shadow-lg transition-all duration-300 md:col-span-3 lg:col-span-1 hover:-translate-y-1">
             <div className="text-center">
-              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FaMapMarkerAlt className="text-2xl text-blue-600" />
+              <div className="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-slate-200">
+                <FaMapMarkerAlt className="text-2xl text-slate-900" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Visit Us</h3>
-              <div className="text-sm text-gray-600 leading-relaxed">
-                <p className="font-semibold text-gray-900 mb-1">Finntech Business Solutions</p>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">Visit Us</h3>
+              <div className="text-sm text-slate-600 leading-relaxed">
+                <p className="font-semibold text-slate-900 mb-1">Finntech Business Solutions</p>
                 <p>775/A, 4th Floor, 9th A Main</p>
                 <p>1st Stage, Indiranagar</p>
                 <p>Above Anglo American Opticals</p>
-                <p className="font-semibold text-gray-900 mt-2">Bangalore - 560038</p>
+                <p className="font-semibold text-slate-900 mt-2">Bangalore - 560038</p>
                 <p>Karnataka, India</p>
               </div>
             </div>
@@ -100,38 +100,38 @@ const Contact = ({ onApplyClick, navigateTo }) => {
 
           {/* Why Choose Us - Takes 2 columns */}
           <div className="lg:col-span-2">
-            <div className="bg-blue-50 border border-blue-100 p-8 rounded-xl h-full">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Us?</h3>
+            <div className="bg-slate-50 border border-slate-200 p-8 rounded-xl h-full">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Why Choose Us?</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">Free initial consultation with expert advisors</span>
+                  <span className="ml-3 text-slate-700 leading-relaxed">Free initial consultation with expert advisors</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">Partnership with 25+ leading banks</span>
+                  <span className="ml-3 text-slate-700 leading-relaxed">Partnership with 25+ leading banks</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">Fast processing and quick approval</span>
+                  <span className="ml-3 text-slate-700 leading-relaxed">Fast processing and quick approval</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">No hidden charges or processing fees</span>
+                  <span className="ml-3 text-slate-700 leading-relaxed">No hidden charges or processing fees</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">Dedicated support throughout the process</span>
+                  <span className="ml-3 text-slate-700 leading-relaxed">Dedicated support throughout the process</span>
                 </li>
               </ul>
             </div>

@@ -50,10 +50,10 @@ const Services = ({ onApplyClick }) => {
     <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
             Expert Financial Solutions
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-slate-500 max-w-3xl mx-auto">
             Comprehensive financial consulting services designed to accelerate
             your growth
           </p>
@@ -73,8 +73,8 @@ const Services = ({ onApplyClick }) => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
-                {/* Light Blue shade overlay at bottom like reference image */}
-                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-blue-400/70 via-blue-300/40 to-transparent"></div>
+                {/* Dark gradient overlay at bottom */}
+                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-slate-900/90 via-slate-800/60 to-transparent"></div>
 
                 {/* Title Section */}
                 <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
@@ -97,7 +97,7 @@ const Services = ({ onApplyClick }) => {
                         );
                       }
                     }}
-                    className="w-full py-2.5 sm:py-3 px-6 rounded-2xl font-semibold text-white bg-white/25 backdrop-blur-md border border-white/30 hover:bg-white/35 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] active:scale-95 text-sm"
+                    className="w-full py-2.5 sm:py-3 px-6 rounded-2xl font-semibold text-white bg-slate-900/80 backdrop-blur-md border border-slate-700 hover:bg-slate-900 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] active:scale-95 text-sm"
                   >
                     Get Consultation
                   </button>
@@ -107,7 +107,7 @@ const Services = ({ onApplyClick }) => {
           ))}
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

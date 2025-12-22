@@ -5,6 +5,7 @@ import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import Team from "../components/Team";
 import WhyChooseUs from "../components/WhyChooseUs";
+import EMICalculator from "../components/EMICalculator";
 
 const Home = ({ onApplyClick, navigateTo }) => {
   return (
@@ -16,6 +17,7 @@ const Home = ({ onApplyClick, navigateTo }) => {
       />
       <Hero onApplyClick={onApplyClick} />
       <Services onApplyClick={onApplyClick} />
+      <EMICalculator />
       <WhyChooseUs />
       <Team />
       <CTA onApplyClick={onApplyClick} />

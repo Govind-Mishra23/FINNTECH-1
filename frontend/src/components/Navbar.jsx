@@ -18,10 +18,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
         <div className="md:hidden border-b border-gray-100 py-2 flex justify-center items-center gap-2">
           <img src={Logo} alt="Finntech Business Solutions" className="h-10" />
           <div className="flex flex-col">
-            <span className="text-sm font-bold text-[#2C5282] leading-tight">
+            <span className="text-sm font-bold text-slate-800 leading-tight">
               Finntech
             </span>
-            <span className="text-xs font-semibold text-[#0891B2] leading-tight">
+            <span className="text-xs font-semibold text-slate-500 leading-tight">
               BUSINESS SOLUTION
             </span>
           </div>
@@ -37,10 +37,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
               className="h-20"
             />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-[#2C5282] leading-tight">
+              <span className="text-xl font-bold text-slate-800 leading-tight">
                 Finntech
               </span>
-              <span className="text-sm font-semibold text-[#0891B2] leading-tight">
+              <span className="text-sm font-semibold text-slate-500 leading-tight">
                 BUSINESS SOLUTION
               </span>
             </div>
@@ -56,11 +56,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
                     navigateTo("home");
                   }
                 }}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  currentPage === "home"
-                    ? "text-blue-600 font-semibold"
-                    : "text-gray-500 hover:text-blue-600"
-                }`}
+                className={`px-3 py-2 text-sm font-medium transition-colors ${currentPage === "home"
+                    ? "text-slate-900 font-bold"
+                    : "text-slate-500 hover:text-slate-900"
+                  }`}
               >
                 Home
               </button>
@@ -71,11 +70,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
                     navigateTo("loanservices");
                   }
                 }}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  currentPage === "loanservices"
-                    ? "text-blue-600 font-semibold"
-                    : "text-gray-500 hover:text-blue-600"
-                }`}
+                className={`px-3 py-2 text-sm font-medium transition-colors ${currentPage === "loanservices"
+                    ? "text-slate-900 font-bold"
+                    : "text-slate-500 hover:text-slate-900"
+                  }`}
               >
                 Loan Services
               </button>
@@ -86,11 +84,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
                     navigateTo("about");
                   }
                 }}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  currentPage === "about"
-                    ? "text-blue-600 font-semibold"
-                    : "text-gray-500 hover:text-blue-600"
-                }`}
+                className={`px-3 py-2 text-sm font-medium transition-colors ${currentPage === "about"
+                    ? "text-slate-900 font-bold"
+                    : "text-slate-500 hover:text-slate-900"
+                  }`}
               >
                 About
               </button>
@@ -101,11 +98,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
                     navigateTo("contact");
                   }
                 }}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  currentPage === "contact"
-                    ? "text-blue-600 font-semibold"
-                    : "text-gray-500 hover:text-blue-600"
-                }`}
+                className={`px-3 py-2 text-sm font-medium transition-colors ${currentPage === "contact"
+                    ? "text-slate-900 font-bold"
+                    : "text-slate-500 hover:text-slate-900"
+                  }`}
               >
                 Contact
               </button>
@@ -116,7 +112,7 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="tel:9844208555"
-              className="flex items-center space-x-2 text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+              className="flex items-center space-x-2 text-slate-500 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               <FaPhoneAlt className="w-5 h-5" />
               <span>9844208555</span>
@@ -128,7 +124,7 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
                   onApplyClick();
                 }
               }}
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+              className="bg-slate-900 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors shadow-lg hover:shadow-xl border border-slate-700"
             >
               Get Consultation
             </button>
@@ -145,9 +141,8 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
             </a>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`text-gray-500 hover:text-gray-600 focus:outline-none transition-transform duration-300 ${
-                isMenuOpen ? "rotate-90" : "rotate-0"
-              }`}
+              className={`text-gray-500 hover:text-gray-600 focus:outline-none transition-transform duration-300 ${isMenuOpen ? "rotate-90" : "rotate-0"
+                }`}
             >
               <svg
                 className="h-6 w-6"
@@ -173,9 +168,8 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden bg-gradient-to-b from-blue-50 to-white border-t border-gray-200 absolute top-24 left-0 right-0 shadow-xl z-50 overflow-hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`md:hidden bg-gradient-to-b from-blue-50 to-white border-t border-gray-200 absolute top-24 left-0 right-0 shadow-xl z-50 overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="px-4 py-3 space-y-1">
           <button
@@ -186,11 +180,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
               }
               setIsMenuOpen(false);
             }}
-            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${
-              currentPage === "home"
+            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${currentPage === "home"
                 ? "bg-blue-600 text-white shadow-md"
                 : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-            }`}
+              }`}
           >
             <FaHome className="w-5 h-5" />
             <span>Home</span>
@@ -203,11 +196,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
               }
               setIsMenuOpen(false);
             }}
-            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${
-              currentPage === "loanservices"
+            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${currentPage === "loanservices"
                 ? "bg-blue-600 text-white shadow-md"
                 : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-            }`}
+              }`}
           >
             <FaBriefcase className="w-5 h-5" />
             <span>Loan Services</span>
@@ -220,11 +212,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
               }
               setIsMenuOpen(false);
             }}
-            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${
-              currentPage === "about"
+            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${currentPage === "about"
                 ? "bg-blue-600 text-white shadow-md"
                 : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-            }`}
+              }`}
           >
             <FaInfoCircle className="w-5 h-5" />
             <span>About</span>
@@ -237,11 +228,10 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
               }
               setIsMenuOpen(false);
             }}
-            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${
-              currentPage === "contact"
+            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${currentPage === "contact"
                 ? "bg-blue-600 text-white shadow-md"
                 : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-            }`}
+              }`}
           >
             <FaPhone className="w-5 h-5" />
             <span>Contact</span>
