@@ -19,7 +19,7 @@ const Hero = ({ onApplyClick }) => {
                 <span className="text-white block" style={{ textShadow: '2px 2px 12px rgba(0,0,0,0.5)' }}>
                   Expert Financial
                 </span>
-                <span className="text-amber-400 block text-5xl sm:text-6xl lg:text-7xl" style={{ textShadow: '2px 2px 12px rgba(0,0,0,0.5)' }}>
+                <span className="text-white block text-5xl sm:text-6xl lg:text-7xl" style={{ textShadow: '2px 2px 12px rgba(0,0,0,0.5)' }}>
                   Consultancy
                 </span>
                 <span className="text-white block text-2xl sm:text-3xl lg:text-4xl mt-2 font-semibold" style={{ textShadow: '2px 2px 12px rgba(0,0,0,0.5)' }}>

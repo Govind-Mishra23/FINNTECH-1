@@ -4,24 +4,24 @@ import { FaHandshake, FaClock, FaPercent, FaUserShield } from 'react-icons/fa';
 const WhyChooseUs = () => {
     const features = [
         {
-            icon: <FaHandshake className="w-8 h-8 text-blue-600" />,
+            icon: <FaHandshake className="w-8 h-8 text-gray-700" />,
             title: "Trusted Partners",
-            description: "Official partners with 25+ leading banks and NBFCs ensuring you get the best deals."
+            description: "Official partners with 20+ leading banks and NBFCs ensuring you get the best deals."
         },
         {
-            icon: <FaClock className="w-8 h-8 text-blue-600" />,
+            icon: <FaClock className="w-8 h-8 text-gray-700" />,
             title: "Quick Approval",
-            description: "Streamlined process with minimal documentation for fastest loan sanctions."
+            description: "Streamlined process with minimal documentation, enabling faster loan sanctions and higher loan eligibility."
         },
         {
-            icon: <FaPercent className="w-8 h-8 text-blue-600" />,
+            icon: <FaPercent className="w-8 h-8 text-gray-700" />,
             title: "Lowest Interest Rates",
-            description: "We negotiate with banks to get you the most competitive interest rates in the market."
+            description: "We leverage our bank partnerships to secure the most competitive interest rates for you."
         },
         {
-            icon: <FaUserShield className="w-8 h-8 text-blue-600" />,
+            icon: <FaUserShield className="w-8 h-8 text-gray-700" />,
             title: "100% Transparency",
-            description: "No hidden charges or surprise fees. We believe in complete honesty with our clients."
+            description: "Transparent pricing backed by ethics, trust, and professionalism."
         }
     ];
 
@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {features.map((feature, index) => (
                         <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-                            <div className="bg-blue-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                            <div className="bg-gray-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                                 {feature.icon}
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>

@@ -17,7 +17,7 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -33,11 +33,11 @@ const Team = () => {
             <div key={index} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
               <div className="p-10 text-center relative overflow-hidden">
                 {/* Decorative background element */}
-                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-gray-700 to-gray-800"></div>
 
                 <div className="mb-6">
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-blue-600 font-semibold text-xl">{member.role}</p>
+                  <p className="text-gray-700 font-semibold text-xl">{member.role}</p>
                 </div>
 
                 <p className="text-gray-600 text-base leading-relaxed mb-6">{member.bio}</p>
