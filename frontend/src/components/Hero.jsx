@@ -17,13 +17,13 @@ const Hero = ({ onApplyClick }) => {
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
                 <span className="text-white block" style={{ textShadow: '2px 2px 12px rgba(0,0,0,0.5)' }}>
-                  Expert Loan
+                  Expert Financial
                 </span>
                 <span className="text-amber-400 block text-5xl sm:text-6xl lg:text-7xl" style={{ textShadow: '2px 2px 12px rgba(0,0,0,0.5)' }}>
                   Consultancy
                 </span>
                 <span className="text-white block text-2xl sm:text-3xl lg:text-4xl mt-2 font-semibold" style={{ textShadow: '2px 2px 12px rgba(0,0,0,0.5)' }}>
-                  for Individuals and Businesses
+                  for Individuals & Businesses
                 </span>
               </h1>
             </div>

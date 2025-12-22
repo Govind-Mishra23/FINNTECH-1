@@ -10,7 +10,7 @@ const FloatingActionButton = ({ onClick }) => {
       {isHovered && (
         <div className="hidden md:block absolute bottom-full right-0 mb-3 px-4 py-3 bg-gradient-to-r from-gray-900 to-gray-800 text-white text-sm rounded-xl whitespace-nowrap z-10 shadow-2xl border border-gray-700">
           <div className="flex items-center space-x-2">
-            <FaFileAlt className="text-blue-400" />
+            <FaFileAlt className="text-amber-400" />
             <span className="font-medium">Apply for Loan Now</span>
           </div>
           <div className="absolute top-full right-6 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
@@ -30,11 +30,11 @@ const FloatingActionButton = ({ onClick }) => {
         className="relative text-white rounded-2xl shadow-2xl hover:scale-105 transition-all duration-300 group cursor-pointer overflow-hidden"
         style={{
           background: isHovered
-            ? "linear-gradient(135deg, #3b82f6, #1d4ed8, #1e40af)"
-            : "linear-gradient(135deg, #2563eb, #1d4ed8)",
+            ? "linear-gradient(135deg, #0f172a, #1e293b, #334155)"
+            : "linear-gradient(135deg, #020617, #0f172a)",
           boxShadow: isHovered
-            ? "0 25px 50px -12px rgba(37, 99, 235, 0.4), 0 0 30px rgba(59, 130, 246, 0.3)"
-            : "0 25px 50px -12px rgba(37, 99, 235, 0.25)",
+            ? "0 25px 50px -12px rgba(15, 23, 42, 0.4), 0 0 30px rgba(71, 85, 105, 0.3)"
+            : "0 25px 50px -12px rgba(15, 23, 42, 0.25)",
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -50,7 +50,7 @@ const FloatingActionButton = ({ onClick }) => {
           <FaFileAlt className="w-5 h-5" />
           <div className="flex flex-col items-start">
             <span className="text-sm font-bold leading-tight">Apply Now</span>
-            <span className="text-xs leading-tight text-blue-100">Get Loan</span>
+            <span className="text-xs leading-tight text-slate-400">Get Loan</span>
           </div>
           <svg
             className="w-4 h-4 transition-transform duration-300"
@@ -71,7 +71,7 @@ const FloatingActionButton = ({ onClick }) => {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 translate-x-full group-hover:-translate-x-full transition-transform duration-1000 rounded-2xl"></div>
 
         {/* Pulse Animation on Mobile */}
-        <div className="absolute inset-0 md:hidden rounded-2xl animate-pulse bg-blue-400/20"></div>
+        <div className="absolute inset-0 md:hidden rounded-2xl animate-pulse bg-slate-900/20"></div>
       </button>
     </div>
   );

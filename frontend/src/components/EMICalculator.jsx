@@ -52,26 +52,27 @@ const EMICalculator = () => {
   const { principalPercentage, interestPercentage } = getPercentageBreakdown();
 
   return (
-    <section className="min-h-screen flex flex-col justify-center py-4 sm:py-8 bg-gray-50">
+    <section className="py-12 sm:py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full">
         {/* Header */}
-        <div className="text-center mb-4 sm:mb-8">
-          <h2 className="text-xl sm:text-3xl font-bold text-gray-900">
+        <div className="text-center mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-4xl font-bold text-white mb-2">
             Loan EMI Calculator
           </h2>
+          <p className="text-slate-400 text-sm sm:text-base">Plan your finances with precision</p>
         </div>
 
         {/* Main Calculator Grid */}
-        <div className="grid lg:grid-cols-2 gap-4 lg:gap-8">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-10">
           {/* Left: Input Controls */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6">
+          <div className="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-white/10 shadow-2xl">
             {/* Loan Amount */}
-            <div className="mb-4 sm:mb-6">
-              <div className="flex justify-between items-center mb-1 sm:mb-2">
-                <label className="text-xs sm:text-sm font-semibold text-gray-700">
+            <div className="mb-6 sm:mb-8">
+              <div className="flex justify-between items-center mb-2 sm:mb-3">
+                <label className="text-sm sm:text-base font-medium text-slate-300">
                   Loan Amount
                 </label>
-                <span className="text-sm sm:text-lg font-bold text-blue-600">
+                <span className="text-lg sm:text-2xl font-bold text-emerald-400">
                   {formatCurrency(loanAmount)}
                 </span>
               </div>
@@ -82,17 +83,21 @@ const EMICalculator = () => {
                 step="100000"
                 value={loanAmount}
                 onChange={(e) => setLoanAmount(e.target.value)}
-                className="w-full h-2 bg-gradient-to-r from-blue-200 to-blue-500 rounded-lg appearance-none cursor-pointer slider"
+                className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer slider-emerald"
               />
+              <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <span>₹1L</span>
+                <span>₹5Cr</span>
+              </div>
             </div>
 
             {/* Interest Rate */}
-            <div className="mb-4 sm:mb-6">
-              <div className="flex justify-between items-center mb-1 sm:mb-2">
-                <label className="text-xs sm:text-sm font-semibold text-gray-700">
+            <div className="mb-6 sm:mb-8">
+              <div className="flex justify-between items-center mb-2 sm:mb-3">
+                <label className="text-sm sm:text-base font-medium text-slate-300">
                   Interest Rate (p.a.)
                 </label>
-                <span className="text-sm sm:text-lg font-bold text-blue-600">
+                <span className="text-lg sm:text-2xl font-bold text-amber-400">
                   {interestRate}%
                 </span>
               </div>
@@ -100,27 +105,31 @@ const EMICalculator = () => {
                 type="range"
                 min="5"
                 max="20"
-                step="0.1"
+                step="0.05"
                 value={interestRate}
                 onChange={(e) => setInterestRate(e.target.value)}
-                className="w-full h-2 bg-gradient-to-r from-blue-200 to-blue-500 rounded-lg appearance-none cursor-pointer slider"
+                className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer slider-amber"
               />
+              <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <span>5%</span>
+                <span>20%</span>
+              </div>
             </div>
 
             {/* Loan Tenure */}
-            <div className="mb-2 sm:mb-6">
-              <div className="flex justify-between items-center mb-1 sm:mb-2">
-                <label className="text-xs sm:text-sm font-semibold text-gray-700">
+            <div className="mb-4 sm:mb-6">
+              <div className="flex justify-between items-center mb-2 sm:mb-3">
+                <label className="text-sm sm:text-base font-medium text-slate-300">
                   Loan Tenure
                 </label>
-                <div className="flex items-center gap-1 sm:gap-2">
-                  <span className="text-sm sm:text-lg font-bold text-blue-600">
+                <div className="flex items-center gap-2">
+                  <span className="text-lg sm:text-2xl font-bold text-cyan-400">
                     {loanTenure}
                   </span>
                   <select
                     value={tenureType}
                     onChange={(e) => setTenureType(e.target.value)}
-                    className="text-xs sm:text-sm font-semibold text-blue-600 bg-blue-50 border-0 rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 cursor-pointer focus:ring-2 focus:ring-blue-500"
+                    className="text-sm font-medium text-cyan-400 bg-slate-700/50 border border-slate-600 rounded-lg px-2 py-1 cursor-pointer focus:ring-2 focus:ring-cyan-500 focus:outline-none"
                   >
                     <option value="years">Years</option>
                     <option value="months">Months</option>
@@ -134,15 +143,19 @@ const EMICalculator = () => {
                 step="1"
                 value={loanTenure}
                 onChange={(e) => setLoanTenure(e.target.value)}
-                className="w-full h-2 bg-gradient-to-r from-blue-200 to-blue-500 rounded-lg appearance-none cursor-pointer slider"
+                className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer slider-cyan"
               />
+              <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <span>{tenureType === "years" ? "1 Yr" : "12 Mo"}</span>
+                <span>{tenureType === "years" ? "30 Yrs" : "360 Mo"}</span>
+              </div>
             </div>
 
             {/* Number Inputs for Precision - Hidden on mobile */}
-            <div className="hidden sm:grid grid-cols-3 gap-3 pt-4 border-t border-gray-200">
+            <div className="hidden sm:grid grid-cols-3 gap-4 pt-6 border-t border-slate-700">
               <div>
-                <label className="text-xs text-gray-600 mb-1 block">
-                  Principal
+                <label className="text-xs text-slate-400 mb-1.5 block">
+                  Principal (₹)
                 </label>
                 <input
                   type="number"
@@ -152,108 +165,125 @@ const EMICalculator = () => {
                       Math.max(100000, Math.min(50000000, e.target.value))
                     )
                   }
-                  className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 text-sm bg-slate-700/50 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent focus:outline-none"
                 />
               </div>
               <div>
-                <label className="text-xs text-gray-600 mb-1 block">
-                  Rate %
+                <label className="text-xs text-slate-400 mb-1.5 block">
+                  Rate (%)
                 </label>
                 <input
                   type="number"
-                  step="0.1"
+                  step="0.05"
                   value={interestRate}
                   onChange={(e) =>
                     setInterestRate(Math.max(5, Math.min(20, e.target.value)))
                   }
-                  className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 text-sm bg-slate-700/50 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent focus:outline-none"
                 />
               </div>
               <div>
-                <label className="text-xs text-gray-600 mb-1 block">
+                <label className="text-xs text-slate-400 mb-1.5 block">
                   Tenure
                 </label>
                 <input
                   type="number"
                   value={loanTenure}
                   onChange={(e) => setLoanTenure(e.target.value)}
-                  className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 text-sm bg-slate-700/50 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent focus:outline-none"
                 />
               </div>
             </div>
           </div>
 
           {/* Right: Results & Breakdown */}
-          <div className="space-y-3 sm:space-y-4">
-            {/* EMI Card */}
-            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 text-white">
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-sm font-medium opacity-90">
-                  Monthly EMI
-                </span>
-              </div>
-              <div className="text-2xl sm:text-4xl font-bold mb-1">
-                {formatCurrency(emi)}
-              </div>
-              <div className="text-xs opacity-80">
-                per month for{" "}
-                {tenureType === "years"
-                  ? loanTenure + " years"
-                  : loanTenure + " months"}
+          <div className="space-y-4 sm:space-y-5">
+            {/* EMI Card - Hero style */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-700 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-12 -translate-x-12"></div>
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-emerald-100 font-medium text-sm sm:text-base">
+                    Monthly EMI
+                  </span>
+                  <span className="bg-white/20 text-white text-xs px-3 py-1 rounded-full">
+                    {tenureType === "years" ? loanTenure + " Years" : loanTenure + " Months"}
+                  </span>
+                </div>
+                <div className="text-3xl sm:text-5xl font-bold text-white mb-1">
+                  {formatCurrency(emi)}
+                </div>
+                <div className="text-emerald-100/80 text-sm">
+                  payable monthly
+                </div>
               </div>
             </div>
 
             {/* Breakdown Cards */}
-            <div className="grid grid-cols-2 gap-2 sm:gap-4">
-              <div className="bg-white rounded-lg sm:rounded-xl shadow p-3 sm:p-4 border-l-4 border-blue-500">
-                <div className="text-xs text-gray-600 mb-1">
-                  Principal Amount
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-emerald-500/30 hover:border-emerald-400/50 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
+                  <span className="text-xs text-slate-400">Principal</span>
                 </div>
-                <div className="text-sm sm:text-lg font-bold text-gray-900">
+                <div className="text-lg sm:text-xl font-bold text-white">
                   {formatCurrency(loanAmount)}
                 </div>
+                <div className="text-xs text-emerald-400 mt-1">{principalPercentage}%</div>
               </div>
 
-              <div className="bg-white rounded-lg sm:rounded-xl shadow p-3 sm:p-4 border-l-4 border-indigo-500">
-                <div className="text-xs text-gray-600 mb-1">Total Interest</div>
-                <div className="text-sm sm:text-lg font-bold text-gray-900">
+              <div className="bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-amber-500/30 hover:border-amber-400/50 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-3 h-3 bg-amber-500 rounded-full"></div>
+                  <span className="text-xs text-slate-400">Total Interest</span>
+                </div>
+                <div className="text-lg sm:text-xl font-bold text-white">
                   {formatCurrency(totalInterest)}
                 </div>
+                <div className="text-xs text-amber-400 mt-1">{interestPercentage}%</div>
               </div>
             </div>
 
             {/* Total Payment Card */}
-            <div className="bg-white rounded-lg sm:rounded-xl shadow p-3 sm:p-4 border-t-4 border-blue-500 flex justify-between items-center">
-              <div>
-                <div className="text-xs text-gray-600 mb-1">
-                  Total Payment
+            <div className="bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-slate-600">
+              <div className="flex justify-between items-center">
+                <div>
+                  <div className="text-xs text-slate-400 mb-1">Total Payment</div>
+                  <div className="text-xl sm:text-2xl font-bold text-white">
+                    {formatCurrency(totalAmount)}
+                  </div>
                 </div>
-                <div className="text-lg sm:text-2xl font-bold text-gray-900">
-                  {formatCurrency(totalAmount)}
+                <div className="text-right">
+                  <div className="text-xs text-slate-400 mb-1">Interest Cost</div>
+                  <div className="text-lg sm:text-xl font-semibold text-amber-400">
+                    +{formatCurrency(totalInterest)}
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Visual Breakdown Bar */}
-            <div className="bg-white rounded-lg sm:rounded-xl shadow p-3 sm:p-4">
-              <div className="h-4 w-full bg-gray-200 rounded-full overflow-hidden flex">
+            <div className="bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-slate-700">
+              <div className="text-xs text-slate-400 mb-3">Payment Breakdown</div>
+              <div className="h-4 w-full bg-slate-700 rounded-full overflow-hidden flex">
                 <div
-                  className="bg-blue-500 h-full"
+                  className="bg-gradient-to-r from-emerald-500 to-emerald-400 h-full transition-all duration-500"
                   style={{ width: `${principalPercentage}%` }}
                 ></div>
                 <div
-                  className="bg-indigo-500 h-full"
+                  className="bg-gradient-to-r from-amber-500 to-amber-400 h-full transition-all duration-500"
                   style={{ width: `${interestPercentage}%` }}
                 ></div>
               </div>
-              <div className="flex justify-between mt-2 text-xs">
-                <div className="flex items-center gap-1">
-                  <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                  <span className="text-gray-700">Principal {principalPercentage}%</span>
+              <div className="flex justify-between mt-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-sm"></div>
+                  <span className="text-xs text-slate-300">Principal {principalPercentage}%</span>
                 </div>
-                <div className="flex items-center gap-1">
-                  <div className="w-3 h-3 bg-indigo-500 rounded"></div>
-                  <span className="text-gray-700">Interest {interestPercentage}%</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-gradient-to-r from-amber-500 to-amber-400 rounded-sm"></div>
+                  <span className="text-xs text-slate-300">Interest {interestPercentage}%</span>
                 </div>
               </div>
             </div>
@@ -263,35 +293,79 @@ const EMICalculator = () => {
 
       {/* Custom Slider Styles */}
       <style jsx>{`
-        .slider::-webkit-slider-thumb {
+        .slider-emerald::-webkit-slider-thumb {
           appearance: none;
-          width: 20px;
-          height: 20px;
-          background: white;
-          border: 2px solid #2563eb;
+          width: 22px;
+          height: 22px;
+          background: linear-gradient(135deg, #10b981, #059669);
+          border: 3px solid #fff;
           border-radius: 50%;
           cursor: pointer;
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
           transition: all 0.2s;
         }
-
-        .slider::-webkit-slider-thumb:hover {
-          transform: scale(1.1);
+        .slider-emerald::-webkit-slider-thumb:hover {
+          transform: scale(1.15);
+          box-shadow: 0 6px 16px rgba(16, 185, 129, 0.5);
         }
-
-        .slider::-moz-range-thumb {
-          width: 20px;
-          height: 20px;
-          background: white;
-          border: 2px solid #2563eb;
+        .slider-amber::-webkit-slider-thumb {
+          appearance: none;
+          width: 22px;
+          height: 22px;
+          background: linear-gradient(135deg, #f59e0b, #d97706);
+          border: 3px solid #fff;
           border-radius: 50%;
           cursor: pointer;
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
           transition: all 0.2s;
         }
-
-        .slider::-moz-range-thumb:hover {
-          transform: scale(1.1);
+        .slider-amber::-webkit-slider-thumb:hover {
+          transform: scale(1.15);
+          box-shadow: 0 6px 16px rgba(245, 158, 11, 0.5);
+        }
+        .slider-cyan::-webkit-slider-thumb {
+          appearance: none;
+          width: 22px;
+          height: 22px;
+          background: linear-gradient(135deg, #06b6d4, #0891b2);
+          border: 3px solid #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
+          transition: all 0.2s;
+        }
+        .slider-cyan::-webkit-slider-thumb:hover {
+          transform: scale(1.15);
+          box-shadow: 0 6px 16px rgba(6, 182, 212, 0.5);
+        }
+        
+        /* Firefox */
+        .slider-emerald::-moz-range-thumb {
+          width: 22px;
+          height: 22px;
+          background: linear-gradient(135deg, #10b981, #059669);
+          border: 3px solid #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
+        .slider-amber::-moz-range-thumb {
+          width: 22px;
+          height: 22px;
+          background: linear-gradient(135deg, #f59e0b, #d97706);
+          border: 3px solid #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+        }
+        .slider-cyan::-moz-range-thumb {
+          width: 22px;
+          height: 22px;
+          background: linear-gradient(135deg, #06b6d4, #0891b2);
+          border: 3px solid #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
         }
       `}</style>
     </section>
