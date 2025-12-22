@@ -29,8 +29,7 @@ const Hero = ({ onApplyClick }) => {
             </div>
 
             <p className="text-lg sm:text-xl text-gray-100 leading-relaxed max-w-xl" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.7)' }}>
-              Tied up with all leading banks to provide secured loan solutions.
-              From home loans to infrastructure funding - we make financing simple.
+              Partnered with leading banks to deliver end-to-end secured loan solutions. We simplify financing by offering optimal loan quantum with clarity, trust, and expertise.
             </p>
 
             <div className="pt-4">

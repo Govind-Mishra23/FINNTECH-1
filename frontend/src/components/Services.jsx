@@ -5,6 +5,7 @@ import DebtConsolidationImg from "../assets/debtconsolidation.jpeg";
 import StructuredFinanceImg from "../assets/structuredfinance.jpeg";
 import InfrastructureImg from "../assets/infrastructure.jpeg";
 import RentalDiscountingImg from "../assets/rentaldiscounting.jpeg";
+import ConstructionFinanceImg from "../assets/constructionfinance.png";
 
 const Services = ({ onApplyClick }) => {
   const financialServices = [
@@ -37,6 +38,11 @@ const Services = ({ onApplyClick }) => {
       image: RentalDiscountingImg,
       title: "Rental Discounting",
       subtitle: "Immediate liquidity solutions",
+    },
+    {
+      image: ConstructionFinanceImg,
+      title: "Construction Finance",
+      subtitle: "Build Your Vision with Confidence",
     },
   ];
 

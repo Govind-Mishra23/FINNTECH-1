@@ -16,6 +16,7 @@ const About = ({ onApplyClick, navigateTo }) => {
     "Project Finance",
     "Infrastructure Funding",
     "Rental Discounting",
+    "Construction Finance",
   ];
 
   return (
@@ -101,7 +102,7 @@ const About = ({ onApplyClick, navigateTo }) => {
                   <p className="font-semibold text-gray-900 text-center leading-relaxed text-sm sm:text-base">
                     Home Loans • Mortgages • Debt Consolidation • Structured
                     Finance • Project Finance • Infrastructure Funding • Rental
-                    Discounting
+                    Discounting • Construction Finance
                   </p>
                 </div>
 
@@ -185,7 +186,7 @@ const About = ({ onApplyClick, navigateTo }) => {
               </div>
               <div className="bg-white border-2 border-blue-100 rounded-xl p-4 sm:p-6 text-center hover:shadow-lg transition-shadow">
                 <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">
-                  7
+                  8
                 </div>
                 <div className="text-xs sm:text-sm font-medium text-gray-600">
                   Service Categories

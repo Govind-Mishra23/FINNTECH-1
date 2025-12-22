@@ -11,6 +11,7 @@ import DebtConsolidationImg from "../assets/debtconsolidation.jpeg";
 import StructuredFinanceImg from "../assets/structuredfinance.jpeg";
 import InfrastructureImg from "../assets/infrastructure.jpeg";
 import RentalDiscountingImg from "../assets/rentaldiscounting.jpeg";
+import ConstructionFinanceImg from "../assets/constructionfinance.png";
 
 const LoanServices = ({ onApplyClick, navigateTo }) => {
   const loanServices = [
@@ -84,6 +85,18 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
         "Immediate liquidity against future rental income",
         "Competitive discounting rates",
         "Retain property ownership and appreciation",
+      ],
+    },
+    {
+      image: ConstructionFinanceImg,
+      title: "Construction Finance",
+      subtitle: "Build Your Vision with Confidence",
+      description:
+        "Comprehensive construction financing solutions for residential, commercial, and industrial projects. Get stage-wise disbursement aligned with project milestones and competitive rates.",
+      keyBenefits: [
+        "Stage-wise disbursement based on construction progress",
+        "Financing for residential and commercial projects",
+        "Flexible repayment options post-construction",
       ],
     },
   ];
