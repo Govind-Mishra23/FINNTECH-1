@@ -24,6 +24,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
     "Structured Finance",
     "Infra Funding",
     "Rental Discounting",
+    "Construction Finance",
   ];
 
   const handleInputChange = (e) => {
