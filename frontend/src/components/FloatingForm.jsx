@@ -29,9 +29,13 @@ const FloatingForm = ({ isOpen, onClose }) => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+
+    // Force lowercase for email
+    const finalValue = name === "email" ? value.toLowerCase() : value;
+
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: finalValue,
     }));
     // Clear error when user starts typing
     if (errors[name]) {
