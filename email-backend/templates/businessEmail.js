@@ -133,9 +133,10 @@ export const businessEmailTemplate = (data) => {
       
       <div class="field">
         <span class="label">Received At</span>
-        <div class="value">${new Date().toLocaleString('en-US', {
+        <div class="value">${new Date().toLocaleString('en-IN', {
         dateStyle: 'full',
-        timeStyle: 'short'
+        timeStyle: 'short',
+        timeZone: 'Asia/Kolkata'
     })}</div>
       </div>
     </div>
