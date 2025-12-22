@@ -60,7 +60,7 @@ const Hero = ({ onApplyClick }) => {
                 <span className="text-white font-medium text-sm" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>Quick approvals</span>
               </div>
               <div className="flex items-center bg-white/10 backdrop-blur-md px-5 py-3 rounded-full border border-white/20 shadow-lg">
-                <FaCheckCircle className="w-5 h-5 text-amber-400 mr-2" />
+                <FaCheckCircle className="w-5 h-5 text-emerald-400 mr-2" />
                 <span className="text-white font-medium text-sm" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>Expert guidance</span>
               </div>
             </div>

@@ -185,7 +185,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
         )}
 
         {/* Header */}
-        <div className="relative bg-gradient-to-br from-teal-500 to-blue-600 text-white px-4 sm:px-5 py-2.5 sm:py-3 rounded-t-2xl sm:rounded-t-3xl flex-shrink-0">
+        <div className="relative bg-gradient-to-r from-gray-800 to-gray-900 text-white px-4 sm:px-5 py-2.5 sm:py-3 rounded-t-2xl sm:rounded-t-3xl flex-shrink-0">
           <div className="flex justify-between items-center">
             <div>
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
@@ -230,8 +230,8 @@ const FloatingForm = ({ isOpen, onClose }) => {
               type="button"
               onClick={() => setApplicantType("individual")}
               className={`flex-1 py-1.5 px-3 sm:px-5 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 ease-in-out relative z-10 ${applicantType === "individual"
-                ? "text-teal-600"
-                : "text-gray-600 hover:text-gray-900"
+                ? "text-gray-900 font-bold"
+                : "text-gray-500 hover:text-gray-900"
                 }`}
             >
               Individual
@@ -240,8 +240,8 @@ const FloatingForm = ({ isOpen, onClose }) => {
               type="button"
               onClick={() => setApplicantType("company")}
               className={`flex-1 py-1.5 px-3 sm:px-5 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 ease-in-out relative z-10 ${applicantType === "company"
-                ? "text-teal-600"
-                : "text-gray-600 hover:text-gray-900"
+                ? "text-gray-900 font-bold"
+                : "text-gray-500 hover:text-gray-900"
                 }`}
             >
               Company
@@ -268,7 +268,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
               onChange={handleInputChange}
               className={`w-full px-3 sm:px-4 py-1.5 sm:py-2 text-sm rounded-lg sm:rounded-xl border transition-all duration-200 ${errors.name
                 ? "border-red-500 bg-red-50 focus:ring-red-500/20"
-                : "border-gray-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10"
+                : "border-gray-200 focus:border-gray-500 focus:ring-4 focus:ring-gray-500/10"
                 } outline-none`}
             />
             {errors.name && (
@@ -291,7 +291,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
                 onChange={handleInputChange}
                 className={`w-full px-3 sm:px-4 py-1.5 sm:py-2 text-sm rounded-lg sm:rounded-xl border transition-all duration-200 ${errors.company
                   ? "border-red-500 bg-red-50 focus:ring-red-500/20"
-                  : "border-gray-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10"
+                  : "border-gray-200 focus:border-gray-500 focus:ring-4 focus:ring-gray-500/10"
                   } outline-none`}
               />
               {errors.company && (
@@ -316,7 +316,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
                 onChange={handleInputChange}
                 className={`w-full px-3 sm:px-4 py-1.5 sm:py-2 text-sm rounded-lg sm:rounded-xl border transition-all duration-200 ${errors.phone
                   ? "border-red-500 bg-red-50 focus:ring-red-500/20"
-                  : "border-gray-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10"
+                  : "border-gray-200 focus:border-gray-500 focus:ring-4 focus:ring-gray-500/10"
                   } outline-none`}
               />
               {errors.phone && (
@@ -338,7 +338,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
                 onChange={handleInputChange}
                 className={`w-full px-3 sm:px-4 py-1.5 sm:py-2 text-sm rounded-lg sm:rounded-xl border transition-all duration-200 ${errors.email
                   ? "border-red-500 bg-red-50 focus:ring-red-500/20"
-                  : "border-gray-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10"
+                  : "border-gray-200 focus:border-gray-500 focus:ring-4 focus:ring-gray-500/10"
                   } outline-none`}
               />
               {errors.email && (
@@ -361,7 +361,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
                 onChange={handleInputChange}
                 className={`w-full px-3 sm:px-4 py-1.5 sm:py-2 text-sm rounded-lg sm:rounded-xl border transition-all duration-200 appearance-none cursor-pointer ${errors.loanType
                   ? "border-red-500 bg-red-50 focus:ring-red-500/20"
-                  : "border-gray-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10"
+                  : "border-gray-200 focus:border-gray-500 focus:ring-4 focus:ring-gray-500/10"
                   } outline-none`}
               >
                 <option value="">Select loan type</option>
@@ -407,7 +407,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
               rows={2}
               className={`w-full px-3 sm:px-4 py-1.5 sm:py-2 text-sm rounded-lg sm:rounded-xl border transition-all duration-200 resize-none ${errors.message
                 ? "border-red-500 bg-red-50 focus:ring-red-500/20"
-                : "border-gray-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10"
+                : "border-gray-200 focus:border-gray-500 focus:ring-4 focus:ring-gray-500/10"
                 } outline-none`}
             />
             {errors.message && (
@@ -423,7 +423,7 @@ const FloatingForm = ({ isOpen, onClose }) => {
             disabled={isSubmitting}
             className={`w-full py-2 sm:py-2.5 px-6 rounded-lg sm:rounded-xl text-sm sm:text-base font-semibold transition-all duration-200 ${isSubmitting
               ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-              : "bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0"
+              : "bg-gradient-to-r from-gray-800 to-gray-900 text-white hover:from-gray-900 hover:to-black shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0"
               }`}
           >
             {isSubmitting ? (
