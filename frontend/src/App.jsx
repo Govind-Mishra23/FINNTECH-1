@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import LoanServices from "./pages/LoanServices";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 import FloatingForm from "./components/FloatingForm";
 import FloatingActionButton from "./components/FloatingActionButton";
 import Navbar from "./components/Navbar";
@@ -40,6 +41,7 @@ function App() {
         <Route path="/about" element={<About onApplyClick={openForm} />} />
         <Route path="/loanservices" element={<LoanServices onApplyClick={openForm} />} />
         <Route path="/contact" element={<Contact onApplyClick={openForm} />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <FloatingActionButton onClick={openForm} />
       <FloatingForm isOpen={isFormOpen} onClose={closeForm} />
