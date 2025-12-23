@@ -1,5 +1,5 @@
-
 import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 import { FaCheckCircle, FaChartLine, FaShieldAlt } from "react-icons/fa";
 import ServiceBanner from "../assets/ServiceBanner.png";
 import EMICalculator from "../components/EMICalculator";
@@ -103,6 +103,10 @@ const LoanServices = ({ onApplyClick }) => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Our Services | Home, Business & Mortgage Loans"
+        description="Explore our comprehensive financial services including Home Loans, Mortgage Loans, Debt Consolidation, and Construction Finance."
+      />
 
       {/* hero1 Section with Banner Image */}
       <section

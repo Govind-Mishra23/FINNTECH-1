@@ -1,5 +1,5 @@
-
 import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -10,6 +10,11 @@ import {
 const Contact = ({ onApplyClick }) => {
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Contact Us | Finntech - Get a Quote Today"
+        description="Contact Finntech Business Solutions for expert advice on loans and financial planning. Call +91 9844208555 or email us today."
+      />
+
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Header */}
@@ -47,10 +52,10 @@ const Contact = ({ onApplyClick }) => {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Email Us</h3>
               <a
-                href="mailto:v.avinash@hotmail.com"
+                href="mailto:avinash@finntechbs.com"
                 className="text-lg font-semibold text-gray-800 hover:text-gray-900 transition-colors block mb-2 break-all"
               >
-                v.avinash@hotmail.com
+                avinash@finntechbs.com
               </a>
               <p className="text-sm text-gray-500">24/7 Email Support</p>
             </div>

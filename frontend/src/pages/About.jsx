@@ -1,5 +1,5 @@
-
 import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 import {
   FaCheckCircle,
   FaLightbulb,
@@ -20,6 +20,10 @@ const About = ({ onApplyClick }) => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="About Us | Finntech Business Solutions"
+        description="Learn about Finntech, a leading financial consultancy in Bangalore with over a decade of experience in Home Loans, Mortgages, and Corporate Finance."
+      />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-12 sm:py-16">
