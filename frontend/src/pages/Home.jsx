@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import CTA from "../components/CTA";
@@ -7,14 +7,9 @@ import Team from "../components/Team";
 import WhyChooseUs from "../components/WhyChooseUs";
 import EMICalculator from "../components/EMICalculator";
 
-const Home = ({ onApplyClick, navigateTo }) => {
+const Home = ({ onApplyClick }) => {
   return (
     <div className="min-h-screen bg-white">
-      <Navbar
-        onApplyClick={onApplyClick}
-        navigateTo={navigateTo}
-        currentPage="home"
-      />
       <Hero onApplyClick={onApplyClick} />
       <Services onApplyClick={onApplyClick} />
       <EMICalculator />

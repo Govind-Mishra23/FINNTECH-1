@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import {
   FaHome,
   FaBriefcase,
@@ -8,8 +9,40 @@ import {
 } from "react-icons/fa";
 import Logo from "../assets/logo1.png";
 
-const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
+const Navbar = ({ onApplyClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Helper for mobile menu links
+  const MobileNavLink = ({ to, icon: Icon, children }) => (
+    <NavLink
+      to={to}
+      onClick={() => setIsMenuOpen(false)}
+      className={({ isActive }) =>
+        `block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${isActive
+          ? "bg-blue-600 text-white shadow-md"
+          : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
+        }`
+      }
+    >
+      <Icon className="w-5 h-5" />
+      <span>{children}</span>
+    </NavLink>
+  );
+
+  // Helper for desktop links
+  const DesktopNavLink = ({ to, children }) => (
+    <NavLink
+      to={to}
+      className={({ isActive }) =>
+        `px-3 py-2 text-sm font-medium transition-colors ${isActive
+          ? "text-slate-900 font-bold"
+          : "text-slate-500 hover:text-slate-900"
+        }`
+      }
+    >
+      {children}
+    </NavLink>
+  );
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
@@ -30,7 +63,7 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
         {/* Second Row - Main Navigation */}
         <div className="flex justify-between items-center h-16">
           {/* Desktop Logo */}
-          <div className="hidden md:flex items-center gap-2">
+          <Link to="/" className="hidden md:flex items-center gap-2">
             <img
               src={Logo}
               alt="Finntech Business Solutions"
@@ -44,67 +77,15 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
                 BUSINESS SOLUTION
               </span>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <button
-                onClick={() => {
-                  console.log("🔗 Navigating to Home page");
-                  if (navigateTo) {
-                    navigateTo("home");
-                  }
-                }}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${currentPage === "home"
-                    ? "text-slate-900 font-bold"
-                    : "text-slate-500 hover:text-slate-900"
-                  }`}
-              >
-                Home
-              </button>
-              <button
-                onClick={() => {
-                  console.log("🔗 Navigating to Loan Services page");
-                  if (navigateTo) {
-                    navigateTo("loanservices");
-                  }
-                }}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${currentPage === "loanservices"
-                    ? "text-slate-900 font-bold"
-                    : "text-slate-500 hover:text-slate-900"
-                  }`}
-              >
-                Loan Services
-              </button>
-              <button
-                onClick={() => {
-                  console.log("🔗 Navigating to About page");
-                  if (navigateTo) {
-                    navigateTo("about");
-                  }
-                }}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${currentPage === "about"
-                    ? "text-slate-900 font-bold"
-                    : "text-slate-500 hover:text-slate-900"
-                  }`}
-              >
-                About
-              </button>
-              <button
-                onClick={() => {
-                  console.log("🔗 Navigating to Contact page");
-                  if (navigateTo) {
-                    navigateTo("contact");
-                  }
-                }}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${currentPage === "contact"
-                    ? "text-slate-900 font-bold"
-                    : "text-slate-500 hover:text-slate-900"
-                  }`}
-              >
-                Contact
-              </button>
+              <DesktopNavLink to="/">Home</DesktopNavLink>
+              <DesktopNavLink to="/loanservices">Loan Services</DesktopNavLink>
+              <DesktopNavLink to="/about">About</DesktopNavLink>
+              <DesktopNavLink to="/contact">Contact</DesktopNavLink>
             </div>
           </div>
 
@@ -172,70 +153,18 @@ const Navbar = ({ onApplyClick, navigateTo, currentPage = "home" }) => {
           }`}
       >
         <div className="px-4 py-3 space-y-1">
-          <button
-            onClick={() => {
-              console.log("📱 Mobile navigating to Home page");
-              if (navigateTo) {
-                navigateTo("home");
-              }
-              setIsMenuOpen(false);
-            }}
-            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${currentPage === "home"
-                ? "bg-blue-600 text-white shadow-md"
-                : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-              }`}
-          >
-            <FaHome className="w-5 h-5" />
-            <span>Home</span>
-          </button>
-          <button
-            onClick={() => {
-              console.log("📱 Mobile navigating to Loan Services page");
-              if (navigateTo) {
-                navigateTo("loanservices");
-              }
-              setIsMenuOpen(false);
-            }}
-            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${currentPage === "loanservices"
-                ? "bg-blue-600 text-white shadow-md"
-                : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-              }`}
-          >
-            <FaBriefcase className="w-5 h-5" />
-            <span>Loan Services</span>
-          </button>
-          <button
-            onClick={() => {
-              console.log("📱 Mobile navigating to About page");
-              if (navigateTo) {
-                navigateTo("about");
-              }
-              setIsMenuOpen(false);
-            }}
-            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${currentPage === "about"
-                ? "bg-blue-600 text-white shadow-md"
-                : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-              }`}
-          >
-            <FaInfoCircle className="w-5 h-5" />
-            <span>About</span>
-          </button>
-          <button
-            onClick={() => {
-              console.log("📱 Mobile navigating to Contact page");
-              if (navigateTo) {
-                navigateTo("contact");
-              }
-              setIsMenuOpen(false);
-            }}
-            className={`block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${currentPage === "contact"
-                ? "bg-blue-600 text-white shadow-md"
-                : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-              }`}
-          >
-            <FaPhone className="w-5 h-5" />
-            <span>Contact</span>
-          </button>
+          <MobileNavLink to="/" icon={FaHome}>
+            Home
+          </MobileNavLink>
+          <MobileNavLink to="/loanservices" icon={FaBriefcase}>
+            Loan Services
+          </MobileNavLink>
+          <MobileNavLink to="/about" icon={FaInfoCircle}>
+            About
+          </MobileNavLink>
+          <MobileNavLink to="/contact" icon={FaPhone}>
+            Contact
+          </MobileNavLink>
         </div>
       </div>
     </nav>

@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 import {
   FaCheckCircle,
@@ -7,7 +7,7 @@ import {
   FaChartLine,
 } from "react-icons/fa";
 
-const About = ({ onApplyClick, navigateTo }) => {
+const About = ({ onApplyClick }) => {
   const services = [
     "Home Loans",
     "Mortgages",
@@ -20,11 +20,6 @@ const About = ({ onApplyClick, navigateTo }) => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar
-        onApplyClick={onApplyClick}
-        navigateTo={navigateTo}
-        currentPage="about"
-      />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-12 sm:py-16">

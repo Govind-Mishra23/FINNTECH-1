@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 import {
   FaPhoneAlt,
@@ -7,14 +7,9 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-const Contact = ({ onApplyClick, navigateTo }) => {
+const Contact = ({ onApplyClick }) => {
   return (
     <div className="min-h-screen bg-white">
-      <Navbar
-        onApplyClick={onApplyClick}
-        navigateTo={navigateTo}
-        currentPage="contact"
-      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Header */}

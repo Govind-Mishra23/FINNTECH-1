@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 import { FaCheckCircle, FaChartLine, FaShieldAlt } from "react-icons/fa";
 import ServiceBanner from "../assets/ServiceBanner.png";
@@ -13,7 +13,7 @@ import InfrastructureImg from "../assets/infrastructure.jpeg";
 import RentalDiscountingImg from "../assets/rentaldiscounting.jpeg";
 import ConstructionFinanceImg from "../assets/constructionfinance.png";
 
-const LoanServices = ({ onApplyClick, navigateTo }) => {
+const LoanServices = ({ onApplyClick }) => {
   const loanServices = [
     {
       image: HomeLoanImg,
@@ -103,11 +103,6 @@ const LoanServices = ({ onApplyClick, navigateTo }) => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar
-        onApplyClick={onApplyClick}
-        navigateTo={navigateTo}
-        currentPage="loanservices"
-      />
 
       {/* hero1 Section with Banner Image */}
       <section

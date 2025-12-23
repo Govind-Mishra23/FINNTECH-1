@@ -1,20 +1,22 @@
 import { useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import LoanServices from "./pages/LoanServices";
 import Contact from "./pages/Contact";
 import FloatingForm from "./components/FloatingForm";
 import FloatingActionButton from "./components/FloatingActionButton";
+import Navbar from "./components/Navbar";
 import "./App.css";
 
 function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState("home");
+  const location = useLocation();
 
-  // Scroll to top instantly whenever the page changes
+  // Scroll to top instantly whenever the path changes
   useEffect(() => {
     window.scroll(0, 0);
-  }, [currentPage]);
+  }, [location.pathname]);
 
   const openForm = () => {
     console.log("🔥 Opening form...");
@@ -30,27 +32,15 @@ function App() {
     document.body.style.overflow = "unset";
   };
 
-  const navigateTo = (page) => {
-    setCurrentPage(page);
-  };
-
-  const renderCurrentPage = () => {
-    switch (currentPage) {
-      case "about":
-        return <About onApplyClick={openForm} navigateTo={navigateTo} />;
-      case "loanservices":
-        return <LoanServices onApplyClick={openForm} navigateTo={navigateTo} />;
-      case "contact":
-        return <Contact onApplyClick={openForm} navigateTo={navigateTo} />;
-      case "home":
-      default:
-        return <Home onApplyClick={openForm} navigateTo={navigateTo} />;
-    }
-  };
-
   return (
     <>
-      {renderCurrentPage()}
+      <Navbar onApplyClick={openForm} />
+      <Routes>
+        <Route path="/" element={<Home onApplyClick={openForm} />} />
+        <Route path="/about" element={<About onApplyClick={openForm} />} />
+        <Route path="/loanservices" element={<LoanServices onApplyClick={openForm} />} />
+        <Route path="/contact" element={<Contact onApplyClick={openForm} />} />
+      </Routes>
       <FloatingActionButton onClick={openForm} />
       <FloatingForm isOpen={isFormOpen} onClose={closeForm} />
     </>
