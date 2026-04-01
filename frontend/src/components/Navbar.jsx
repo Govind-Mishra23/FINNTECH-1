@@ -55,7 +55,7 @@ const Navbar = ({ onApplyClick }) => {
               Finntech
             </span>
             <span className="text-xs font-semibold text-slate-500 leading-tight">
-              BUSINESS SOLUTION
+              BUSINESS SOLUTIONS
             </span>
           </div>
         </div>
