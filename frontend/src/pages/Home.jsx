@@ -1,0 +1,28 @@
+import Hero from "../components/Hero";
+import Services from "../components/Services";
+import CTA from "../components/CTA";
+import Footer from "../components/Footer";
+import Team from "../components/Team";
+import WhyChooseUs from "../components/WhyChooseUs";
+import EMICalculator from "../components/EMICalculator";
+import SEO from "../components/SEO";
+
+const Home = ({ onApplyClick }) => {
+  return (
+    <div className="min-h-screen bg-white">
+      <SEO
+        title="Best Loan Consultants in Bangalore | Finntech"
+        description="Expert loan consultancy for Home Loans, Business Loans, and Mortgage. Get low interest rates and quick approval from top banks in Bangalore."
+      />
+      <Hero onApplyClick={onApplyClick} />
+      <Services onApplyClick={onApplyClick} />
+      <EMICalculator />
+      <WhyChooseUs />
+      <Team />
+      <CTA onApplyClick={onApplyClick} />
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;
