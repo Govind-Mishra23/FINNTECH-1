@@ -18,9 +18,10 @@ const Navbar = ({ onApplyClick }) => {
       to={to}
       onClick={() => setIsMenuOpen(false)}
       className={({ isActive }) =>
-        `block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${isActive
-          ? "bg-blue-600 text-white shadow-md"
-          : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
+        `block px-4 py-3 text-base font-medium w-full text-left rounded-lg transition-all duration-200 flex items-center gap-2 ${
+          isActive
+            ? "bg-blue-600 text-white shadow-md"
+            : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
         }`
       }
     >
@@ -34,9 +35,10 @@ const Navbar = ({ onApplyClick }) => {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        `px-3 py-2 text-sm font-medium transition-colors ${isActive
-          ? "text-slate-900 font-bold"
-          : "text-slate-500 hover:text-slate-900"
+        `px-3 py-2 text-sm font-medium transition-colors ${
+          isActive
+            ? "text-slate-900 font-bold"
+            : "text-slate-500 hover:text-slate-900"
         }`
       }
     >
@@ -74,7 +76,7 @@ const Navbar = ({ onApplyClick }) => {
                 Finntech
               </span>
               <span className="text-sm font-semibold text-slate-500 leading-tight">
-                BUSINESS SOLUTION
+                BUSINES SOLUTIONS
               </span>
             </div>
           </Link>
@@ -92,11 +94,11 @@ const Navbar = ({ onApplyClick }) => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:9844208555"
+              href="tel:08049775014"
               className="flex items-center space-x-2 text-slate-500 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               <FaPhoneAlt className="w-5 h-5" />
-              <span>9844208555</span>
+              <span>08049775014</span>
             </a>
             <button
               onClick={(e) => {
@@ -114,16 +116,17 @@ const Navbar = ({ onApplyClick }) => {
           {/* Mobile menu button and phone */}
           <div className="md:hidden flex items-center justify-between w-full">
             <a
-              href="tel:9844208555"
+              href="tel:08049775014"
               className="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center gap-1"
             >
               <FaPhoneAlt className="w-4 h-4" />
-              9844208555
+              08049775014
             </a>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`text-gray-500 hover:text-gray-600 focus:outline-none transition-transform duration-300 ${isMenuOpen ? "rotate-90" : "rotate-0"
-                }`}
+              className={`text-gray-500 hover:text-gray-600 focus:outline-none transition-transform duration-300 ${
+                isMenuOpen ? "rotate-90" : "rotate-0"
+              }`}
             >
               <svg
                 className="h-6 w-6"
@@ -149,8 +152,9 @@ const Navbar = ({ onApplyClick }) => {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden bg-gradient-to-b from-blue-50 to-white border-t border-gray-200 absolute top-24 left-0 right-0 shadow-xl z-50 overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
+        className={`md:hidden bg-gradient-to-b from-blue-50 to-white border-t border-gray-200 absolute top-24 left-0 right-0 shadow-xl z-50 overflow-hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
         <div className="px-4 py-3 space-y-1">
           <MobileNavLink to="/" icon={FaHome}>

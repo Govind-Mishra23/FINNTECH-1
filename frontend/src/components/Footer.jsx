@@ -162,17 +162,16 @@ const Footer = () => {
                   href="mailto:avinash@finntechbs.com"
                   className="hover:text-white transition-colors"
                 >
-                   ⁠info@finntechbs.com
-
+                  ⁠info@finntechbs.com
                 </a>
               </li>
               <li className="flex items-center space-x-2">
                 <FaPhoneAlt className="text-gray-300 flex-shrink-0 text-xs" />
                 <a
-                  href="tel:9844208555"
+                  href="tel:08049775014"
                   className="hover:text-white transition-colors"
                 >
-                  +91 9844208555
+                  +91 08049775014
                 </a>
               </li>
             </ul>

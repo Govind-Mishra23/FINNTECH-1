@@ -12,16 +12,18 @@ const Contact = ({ onApplyClick }) => {
     <div className="min-h-screen bg-white">
       <SEO
         title="Contact Us | Finntech - Get a Quote Today"
-        description="Contact Finntech Business Solutions for expert advice on loans and financial planning. Call +91 9844208555 or email us today."
+        description="Contact Finntech Business Solutions for expert advice on loans and financial planning. Call +91 08049775014 or email us today."
       />
-
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Contact Us</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+            Contact Us
+          </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Ready to discuss your loan requirements? Get in touch with our expert team.
+            Ready to discuss your loan requirements? Get in touch with our
+            expert team.
           </p>
         </div>
 
@@ -35,10 +37,10 @@ const Contact = ({ onApplyClick }) => {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Call Us</h3>
               <a
-                href="tel:9844208555"
+                href="tel:08049775014"
                 className="text-xl font-semibold text-gray-800 hover:text-gray-900 transition-colors block mb-2"
               >
-                +91 9844208555
+                +91 08049775014
               </a>
               <p className="text-sm text-gray-500">Mon-Sat: 9 AM - 6 PM</p>
             </div>
@@ -69,11 +71,15 @@ const Contact = ({ onApplyClick }) => {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Visit Us</h3>
               <div className="text-sm text-gray-600 leading-relaxed">
-                <p className="font-semibold text-gray-900 mb-1">Finntech Business Solutions</p>
+                <p className="font-semibold text-gray-900 mb-1">
+                  Finntech Business Solutions
+                </p>
                 <p>775/A, 4th Floor, 9th A Main</p>
                 <p>1st Stage, Indiranagar</p>
                 <p>Above Anglo American Opticals</p>
-                <p className="font-semibold text-gray-900 mt-2">Bangalore - 560038</p>
+                <p className="font-semibold text-gray-900 mt-2">
+                  Bangalore - 560038
+                </p>
                 <p>Karnataka, India</p>
               </div>
             </div>
@@ -101,37 +107,49 @@ const Contact = ({ onApplyClick }) => {
           {/* Why Choose Us - Takes 2 columns */}
           <div className="lg:col-span-2">
             <div className="bg-gray-50 border border-gray-200 p-8 rounded-xl h-full">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Us?</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Why Choose Us?
+              </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">Free initial consultation with expert advisors</span>
+                  <span className="ml-3 text-gray-700 leading-relaxed">
+                    Free initial consultation with expert advisors
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">Partnership with 20+ leading banks</span>
+                  <span className="ml-3 text-gray-700 leading-relaxed">
+                    Partnership with 20+ leading banks
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">Fast processing and quick approval</span>
+                  <span className="ml-3 text-gray-700 leading-relaxed">
+                    Fast processing and quick approval
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">No hidden charges or processing fees</span>
+                  <span className="ml-3 text-gray-700 leading-relaxed">
+                    No hidden charges or processing fees
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <FaCheck className="text-white text-xs" />
                   </div>
-                  <span className="ml-3 text-gray-700 leading-relaxed">Dedicated support throughout the process</span>
+                  <span className="ml-3 text-gray-700 leading-relaxed">
+                    Dedicated support throughout the process
+                  </span>
                 </li>
               </ul>
             </div>
