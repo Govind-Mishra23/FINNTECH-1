@@ -162,7 +162,8 @@ const Footer = () => {
                   href="mailto:avinash@finntechbs.com"
                   className="hover:text-white transition-colors"
                 >
-                  avinash@finntechbs.com
+                   ⁠info@finntechbs.com
+
                 </a>
               </li>
               <li className="flex items-center space-x-2">
