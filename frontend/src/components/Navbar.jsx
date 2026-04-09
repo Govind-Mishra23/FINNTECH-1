@@ -76,7 +76,7 @@ const Navbar = ({ onApplyClick }) => {
                 Finntech
               </span>
               <span className="text-sm font-semibold text-slate-500 leading-tight">
-                BUSINES SOLUTIONS
+                BUSINESS SOLUTIONS
               </span>
             </div>
           </Link>
@@ -94,11 +94,11 @@ const Navbar = ({ onApplyClick }) => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:08049775014"
+              href="tel:080 - 49775014"
               className="flex items-center space-x-2 text-slate-500 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
             >
               <FaPhoneAlt className="w-5 h-5" />
-              <span>08049775014</span>
+              <span>080 - 49775014</span>
             </a>
             <button
               onClick={(e) => {
@@ -116,11 +116,11 @@ const Navbar = ({ onApplyClick }) => {
           {/* Mobile menu button and phone */}
           <div className="md:hidden flex items-center justify-between w-full">
             <a
-              href="tel:08049775014"
+              href="tel:080 - 49775014"
               className="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center gap-1"
             >
               <FaPhoneAlt className="w-4 h-4" />
-              08049775014
+              080 - 49775014
             </a>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}

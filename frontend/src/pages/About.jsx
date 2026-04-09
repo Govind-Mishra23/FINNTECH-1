@@ -105,7 +105,7 @@ const About = ({ onApplyClick }) => {
                 </div>
 
                 <p>
-                  With{" "}
+                  With a{" "}
                   <span className="font-semibold text-gray-900">
                     decade of collective experience
                   </span>
@@ -120,10 +120,10 @@ const About = ({ onApplyClick }) => {
                   <span className="font-semibold text-gray-900">
                     passionate about empowering clients
                   </span>
-                  —helping them make informed decisions, achieve sustainable
-                  growth, and unlock new financial opportunities. We
-                  continuously expand our network and capabilities to transform
-                  challenges into opportunities and visions into reality.
+                  —by simplifying complex financial choices into clear,
+                  actionable steps. Our team works with commitment and
+                  accountability to ensure every recommendation supports real,
+                  measurable progress.
                 </p>
 
                 <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-4 sm:p-6 rounded-xl mt-4 sm:mt-6">
@@ -157,17 +157,14 @@ const About = ({ onApplyClick }) => {
                 Decades of Experience, Trusted Expertise
               </h2>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                With{" "}
-                <span className="font-semibold text-gray-900">
-                  decade of collective experience
-                </span>
-                , we deliver transparent, personalized, and strategic guidance
-                tailored to each client's unique goals.
+                Our advisory approach combines market insight with practical
+                execution, helping clients choose the right financial products
+                and structure decisions with confidence.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                Our proven track record reflects our ability to navigate complex
-                financial landscapes with clarity, professionalism, and
-                confidence.
+                From first consultation to final disbursal, we focus on clear
+                communication, timely support, and solutions aligned with your
+                short-term needs and long-term plans.
               </p>
               <div className="bg-gray-700 h-1 w-20 rounded"></div>
             </div>
@@ -233,9 +230,9 @@ const About = ({ onApplyClick }) => {
                 Empowering Clients
               </h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                We are passionate about helping clients make informed decisions,
-                achieve sustainable growth, and unlock new financial
-                opportunities.
+                We equip clients with clear comparisons, practical guidance, and
+                timely insights so they can make confident financial decisions
+                at every stage.
               </p>
             </div>
 
@@ -248,8 +245,9 @@ const About = ({ onApplyClick }) => {
                 Continuous Growth
               </h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                We continuously expand our network and capabilities to transform
-                challenges into opportunities and visions into reality.
+                We strengthen our banking partnerships and advisory capabilities
+                to offer faster turnarounds, better structuring options, and
+                more value for every client engagement.
               </p>
             </div>
 
@@ -262,9 +260,9 @@ const About = ({ onApplyClick }) => {
                 Trusted Partnership
               </h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                Your trusted partner at every step of the journey—whether
-                securing your dream home, optimizing business financing, or
-                planning long-term success.
+                We build lasting relationships through responsive guidance,
+                ethical advice, and reliable support across every stage of your
+                financial journey.
               </p>
             </div>
           </div>
@@ -278,10 +276,8 @@ const About = ({ onApplyClick }) => {
             Your Financial Success Is Our Priority
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-5 sm:mb-6 leading-relaxed px-2">
-            Whether you are looking to secure your dream home, optimize business
-            financing, or plan for long-term financial success, Finntech
-            Business Solutions is your trusted partner at every step of the
-            journey.
+            Share your goal with us, and our team will craft a practical,
+            transparent roadmap to help you move forward with confidence.
           </p>
           <button
             onClick={onApplyClick}

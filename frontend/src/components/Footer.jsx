@@ -168,10 +168,10 @@ const Footer = () => {
               <li className="flex items-center space-x-2">
                 <FaPhoneAlt className="text-gray-300 flex-shrink-0 text-xs" />
                 <a
-                  href="tel:08049775014"
+                  href="tel:080 - 49775014"
                   className="hover:text-white transition-colors"
                 >
-                  +91 08049775014
+                  080 - 49775014
                 </a>
               </li>
             </ul>
@@ -181,7 +181,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="text-gray-400">
-            © 2025 Finntech Business Solutions. All rights reserved.
+            © 2020 Finntech Business Solutions. All rights reserved.
           </div>
           <div className="flex space-x-6 mt-3 sm:mt-0">
             <a

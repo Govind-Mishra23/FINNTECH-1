@@ -12,7 +12,7 @@ const Contact = ({ onApplyClick }) => {
     <div className="min-h-screen bg-white">
       <SEO
         title="Contact Us | Finntech - Get a Quote Today"
-        description="Contact Finntech Business Solutions for expert advice on loans and financial planning. Call +91 08049775014 or email us today."
+        description="Contact Finntech Business Solutions for expert advice on loans and financial planning. Call 080 - 49775014 or email us today."
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
@@ -37,10 +37,10 @@ const Contact = ({ onApplyClick }) => {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Call Us</h3>
               <a
-                href="tel:08049775014"
+                href="tel:080 - 49775014"
                 className="text-xl font-semibold text-gray-800 hover:text-gray-900 transition-colors block mb-2"
               >
-                +91 08049775014
+                080 - 49775014
               </a>
               <p className="text-sm text-gray-500">Mon-Sat: 9 AM - 6 PM</p>
             </div>
@@ -54,10 +54,10 @@ const Contact = ({ onApplyClick }) => {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Email Us</h3>
               <a
-                href="mailto:avinash@finntechbs.com"
+                href="mailto:info@finntechbs.com"
                 className="text-lg font-semibold text-gray-800 hover:text-gray-900 transition-colors block mb-2 break-all"
               >
-                avinash@finntechbs.com
+                info@finntechbs.com
               </a>
               <p className="text-sm text-gray-500">24/7 Email Support</p>
             </div>
