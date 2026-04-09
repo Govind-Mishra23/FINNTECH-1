@@ -34,9 +34,9 @@ const About = ({ onApplyClick }) => {
               <span className="text-gray-700">Finntech Business Solutions</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Finntech Business Solutions is a rising leader in financial
-              solutions, offering a comprehensive range of services designed for
-              individuals, businesses, and corporates.
+              We help clients make smarter borrowing decisions with reliable
+              guidance, transparent processes, and financing solutions aligned
+              to real financial goals.
             </p>
           </div>
         </div>
