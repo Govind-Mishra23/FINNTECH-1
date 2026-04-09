@@ -123,7 +123,7 @@ const LoanServices = ({ onApplyClick }) => {
         <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
-              Comprehensive Loan Solutions
+              Complete Loan Solutions
             </h1>
             <p className="text-xl sm:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 drop-shadow-md">
               Tailored financial services partnered with leading banks to make
