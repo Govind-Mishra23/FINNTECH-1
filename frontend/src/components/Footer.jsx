@@ -6,10 +6,13 @@ import {
   FaPhone,
   FaPhoneAlt,
   FaGlobe,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 import { HiOfficeBuilding } from "react-icons/hi";
 
 const Footer = () => {
+  const developerContactUrl = "https://mukundawebs.com";
+
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -175,6 +178,26 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Developer Marketing Strip */}
+        <div className="border-y border-gray-800 bg-gray-800/40">
+          <div className="px-4 py-4 sm:px-0">
+            <div className="mx-auto flex w-full flex-col items-start justify-between gap-3 sm:flex-row sm:items-center md:w-1/2">
+              <a
+                href={developerContactUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-gray-600 bg-gray-700/40 px-5 py-2 text-sm font-semibold text-gray-200 transition-all duration-300 hover:border-gray-500 hover:bg-gray-700 hover:text-white"
+              >
+                Contact Developer
+                <FaExternalLinkAlt className="h-3.5 w-3.5" />
+              </a>
+              <p className="text-right text-sm text-gray-400">
+                Marketing partner and digital growth contact
+              </p>
+            </div>
           </div>
         </div>
 
