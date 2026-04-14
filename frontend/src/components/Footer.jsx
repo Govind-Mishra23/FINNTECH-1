@@ -198,7 +198,7 @@ const Footer = () => {
                     <FaExternalLinkAlt className="h-3.5 w-3.5" />
                   </span>
                   <span className="text-xs text-gray-400 hover:text-gray-300">
-                    {developerContactUrl}
+                    {developerContactUrl} // update
                   </span>
                 </a>
               </div>
