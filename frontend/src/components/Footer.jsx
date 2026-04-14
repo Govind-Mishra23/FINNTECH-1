@@ -11,7 +11,7 @@ import {
 import { HiOfficeBuilding } from "react-icons/hi";
 
 const Footer = () => {
-  const developerContactUrl = "https://mukundawebs.com";
+  const developerContactUrl = "https://linktr.ee/govind24";
 
   return (
     <footer className="bg-gray-900 text-white py-8">
