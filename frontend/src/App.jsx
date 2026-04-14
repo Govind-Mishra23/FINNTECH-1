@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import LoanServices from "./pages/LoanServices";
@@ -39,12 +40,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home onApplyClick={openForm} />} />
         <Route path="/about" element={<About onApplyClick={openForm} />} />
-        <Route path="/loanservices" element={<LoanServices onApplyClick={openForm} />} />
+        <Route
+          path="/loanservices"
+          element={<LoanServices onApplyClick={openForm} />}
+        />
         <Route path="/contact" element={<Contact onApplyClick={openForm} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <FloatingActionButton onClick={openForm} />
       <FloatingForm isOpen={isFormOpen} onClose={closeForm} />
+      <Analytics />
     </>
   );
 }
